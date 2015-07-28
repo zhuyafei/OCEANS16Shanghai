@@ -210,13 +210,49 @@
 
 \section{Introduction}
 
+\begin{enumerate}
+\item 水下图像目标检测和分割的背景
+\item 我们为什么要进行水下图像目标检测和分割的研究？有什么意义？
+\item 目前有哪些方法来解决水下图像目标检测和分割这一问题？
+\item 目前的这些方法存在哪些不足？
+\item 我们的方法是如何克服这些不足的？
+\end{enumerate}
+
 \section{Method}
 
-\section{Experiments}
+\subsection{检测}
+
+\begin{enumerate}
+\item 暗原色处理
+\item 介绍DRFI显著性检测方法，说明为什么要用显著性检测方法（显著性检测可以帮助定位到目标，并且即便对低对比度的水下图像也可以定位到）
+\end{enumerate}
+
+\subsection{分割}
+
+\begin{enumerate}
+\item 根据显著图进行目标和背景的确定
+
+显著值越大，对应的像素点是目标的可能性就越大，将显著值大于某阈值的像素点确定为目标。
+
+图像边界上的像素点属于背景的可能性更大，所以将处于图像边界上的像素点确定为背景。
+
+\item Mean-Shift过分割
+
+目前过分割方法有哪些？（mean shift、watershed、graph-based、level set、superpixel）
+
+为什么选用Mean-Shift过分割？（比其它方法生成的区域数目少并且能很好地保持边缘）
+
+\item 基于最大相似度的区域合并
+
+确定经Mean-Shift过分割方法分割后的每个区域的label。
+
+最大相似度的定义。如何合并？
+
+\end{enumerate}
 
 \section{Conclusion}
 
-
+文章的主要贡献
 
 
 
