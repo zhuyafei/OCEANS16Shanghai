@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{he2011single}
+Kaiming He, Jian Sun, and Xiaoou Tang.
+\newblock Single image haze removal using dark channel prior.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 33(12):2341--2353, 2011.
+
+\bibitem{jiang2013salient}
+Huaizu Jiang, Jingdong Wang, Zejian Yuan, Yang Wu, Nanning Zheng, and Shipeng
+  Li.
+\newblock Salient object detection: A discriminative regional feature
+  integration approach.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2013 IEEE
+  Conference on}, pages 2083--2090. IEEE, 2013.
+
+\bibitem{ning2010interactive}
+Jifeng Ning, Lei Zhang, David Zhang, and Chengke Wu.
+\newblock Interactive image segmentation by maximal similarity based region
+  merging.
+\newblock {\em Pattern Recognition}, 43(2):445--456, 2010.
+
+\end{thebibliography}
