@@ -6,7 +6,7 @@
 \usepackage[paper=a4paper,%
 %            total={14.8cm,22.2cm},%
             top=2.9cm,%
-            bottom=3cm,%
+            bottom=2.9cm,%
             left=1.7cm,%
             right=1.7cm]{geometry}
 \linespread{1.3}
@@ -23,7 +23,7 @@
   $\ast$ E-mail: zhenghaiyong@ouc.edu.cn
 \end{center}
 
-Object detection and segmentation from underwater images play an essential role in automatic tracking and recognition of underwater targets such as fishes. Generally, the objects in underwater images are not clearly visible due to low contrast and high noise in the environment, which increases the difficulty of detection and segmentation. Interactive schemes with a few simple user inputs are good solutions for robust detection and accurate segmentation. However, they are usually tedious and not effective in some situations. This paper proposes a novel automatic object detection and segmentation framework to deal with the above problems. Firstly, the dark channel prior~\cite{he2011single} is applied to enhance the image by removing the ``haze'' that makes the underwater image unclear. Then, for detecting salient objects in the enhanced image with complicated background, we choose DRFI~\cite{jiang2013salient} model to generate the saliency map containing ``saliency values'' per pixel. And the obtained saliency map is further processed to determine the location information of object and background. Finally, the region merging based interactive image segmentation method (called MSRM)~\cite{ning2010interactive} is improved by adding the determined object and background information as the user inputs so that the algorithm becomes automatic. The framework of our proposed method is shown in Fig.~\ref{fig:flowchart}. 
+Object detection and segmentation from underwater images play an essential role in automatic tracking and recognition of underwater targets such as fishes. Generally, the objects in underwater images are not clearly visible due to color decay and fuzz effect, which increases the difficulty of detection and segmentation. Interactive schemes with a few simple user inputs are good solutions for robust detection and accurate segmentation. However, they are usually tedious and not effective in some situations. This paper proposes a novel automatic object detection and segmentation framework to deal with the above problems. Firstly, the dark channel prior~\cite{he2011single} is applied to enhance the image by removing the ``haze'' that makes the underwater image unclear. Then, a discriminative regional feature integration approach for salient object detection (DRFI)~\cite{jiang2013salient} is used to generate the saliency map containing ``saliency values'' per pixel. And the obtained saliency map is further processed to determine the location information of object and background. Finally, the interactive image segmentation method by maximal similarity based region merging (MSRM)~\cite{ning2010interactive} is improved by adding the determined object and background location information as the user inputs so that the algorithm becomes automatic. The framework of our proposed method is shown in Fig.~\ref{fig:flowchart}. 
 
 %The binary result (Fig.~\ref{fig:flowchart}(f)) shows that our method can extract the salient objects (fishes) from the background effectively.
 
